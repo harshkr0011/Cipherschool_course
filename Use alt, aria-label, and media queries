@@ -1,0 +1,20 @@
+<!-- q14.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @media (max-width: 600px) {
+      body {
+        background-color: lightgray;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form aria-label="User Info Form">
+    <input type="text" placeholder="Your name">
+    <input type="email" placeholder="Your email">
+  </form>
+  <img src="https://via.placeholder.com/150" alt="Sample Placeholder">
+</body>
+</html>
