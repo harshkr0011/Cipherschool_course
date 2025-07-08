@@ -1,0 +1,21 @@
+<!-- q9.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Navigation</title>
+</head>
+<body>
+  <div id="container">
+    <p>First paragraph</p>
+    <p id="target">Target paragraph</p>
+    <p>Last paragraph</p>
+  </div>
+
+  <script>
+    const target = document.getElementById("target");
+    console.log("Parent Node:", target.parentNode);
+    console.log("Child Nodes of container:", document.getElementById("container").childNodes);
+    console.log("Next Sibling:", target.nextSibling); // May return a text node (like line break)
+  </script>
+</body>
+</html>
