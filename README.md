@@ -59,6 +59,8 @@ Run .js files using browser DevTools or Node.js
 
 🌐 Author
 Name: Harsh Kumar
+
 Submitted for: Cipher Schools Web Development Assignments
+
 Date: July 2025
 
