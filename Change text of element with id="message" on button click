@@ -1,0 +1,11 @@
+<!-- q7.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Text</title>
+</head>
+<body>
+  <p id="message">Original Message</p>
+  <button onclick="document.getElementById('message').innerText = 'Message Changed!'">Change Text</button>
+</body>
+</html>
