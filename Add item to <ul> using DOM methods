@@ -1,0 +1,22 @@
+<!-- q10.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add List Item</title>
+</head>
+<body>
+  <ul id="itemList">
+    <li>Item 1</li>
+  </ul>
+  <button onclick="addItem()">Add Item</button>
+
+  <script>
+    function addItem() {
+      const ul = document.getElementById("itemList");
+      const li = document.createElement("li");
+      li.textContent = "New Item";
+      ul.appendChild(li);
+    }
+  </script>
+</body>
+</html>
