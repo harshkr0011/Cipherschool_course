@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Web Page</title>
+</head>
+<body>
+  <h1>Welcome to My Web Page</h1>
+  <p>This is a simple paragraph about learning web development with Cipher Schools.</p>
+  <img src="https://via.placeholder.com/150" alt="Sample Image">
+</body>
+</html>
