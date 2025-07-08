@@ -1,0 +1,13 @@
+<!-- q5.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greeting Alert</title>
+  <script>
+    alert("Hello! Welcome to Cipher Schools Web Dev Assignment.");
+  </script>
+</head>
+<body>
+  <h1>Check the alert popup above</h1>
+</body>
+</html>
