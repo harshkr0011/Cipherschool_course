@@ -1,0 +1,19 @@
+<!-- q8.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input to Paragraph</title>
+</head>
+<body>
+  <input type="text" id="userInput" placeholder="Enter some text">
+  <button onclick="updateText()">Show in Paragraph</button>
+  <p id="output"></p>
+
+  <script>
+    function updateText() {
+      const input = document.getElementById("userInput").value;
+      document.getElementById("output").innerText = input;
+    }
+  </script>
+</body>
+</html>
