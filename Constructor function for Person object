@@ -1,0 +1,8 @@
+// q11.js
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+const person1 = new Person("Alice", 22);
+console.log(person1); // Output: Person {name: "Alice", age: 22}
