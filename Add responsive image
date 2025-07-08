@@ -1,0 +1,16 @@
+<!-- q13.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://via.placeholder.com/400" alt="Responsive Image">
+</body>
+</html>
