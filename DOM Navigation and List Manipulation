@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM and List</title>
+  <style>
+    .highlight { background-color: yellow; }
+  </style>
+  <script>
+    function logDOM() {
+      const target = document.getElementById("target");
+      console.log("Parent:", target.parentNode);
+      console.log("Children:", document.getElementById("list").childNodes);
+      console.log("Next Sibling:", target.nextSibling);
+    }
+
+    function addItem() {
+      const ul = document.getElementById("list");
+      const li = document.createElement("li");
+      li.textContent = "New Item";
+      ul.appendChild(li);
+      highlightItems();
+    }
+
+    function removeItem() {
+      const ul = document.getElementById("list");
+      const lastItem = ul.lastElementChild;
+      if (lastItem) ul.removeChild(lastItem);
+    }
+
+    function highlightItems() {
+      const items = document.getElementsByTagName("li");
+      for (let item of items) {
+        item.classList.add("highlight");
+      }
+    }
+
+    window.onload = logDOM;
+  </script>
+</head>
+<body>
+  <ul id="list">
+    <li>Item 1</li>
+    <li id="target">Item 2</li>
+  </ul>
+  <button onclick="addItem()">Add Item</button>
+  <button onclick="removeItem()">Remove Last Item</button>
+</body>
+</html>
