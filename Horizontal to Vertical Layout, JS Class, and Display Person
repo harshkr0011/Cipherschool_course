@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Layout and Class</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background: skyblue;
+    }
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <script>
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      sayHello() {
+        return `Hello, I'm ${this.name}, ${this.age} years old.`;
+      }
+    }
+
+    window.onload = () => {
+      const person = new Person("Alice", 25);
+      document.getElementById("personDetails").innerText = person.sayHello();
+    };
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+  </div>
+  <p id="personDetails"></p>
+</body>
+</html>
