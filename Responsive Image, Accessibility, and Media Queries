@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive and Accessible</title>
+  <style>
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background: lightblue;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Page</h1>
+  <img src="https://via.placeholder.com/400" alt="Sample placeholder image">
+  <form aria-label="Contact form">
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <button>Submit</button>
+  </form>
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+  </div>
+</body>
+</html>
