@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Text</title>
+  <script>
+    let clickCount = 0;
+
+    function changeText() {
+      document.getElementById("message").innerText = "Text Changed!";
+    }
+
+    function updateText() {
+      const input = document.getElementById("userInput").value;
+      document.getElementById("output").innerText = input;
+      clickCount++;
+      if (clickCount >= 5) {
+        document.getElementById("updateBtn").disabled = true;
+      }
+    }
+
+    function clearAll() {
+      document.getElementById("userInput").value = "";
+      document.getElementById("output").innerText = "";
+    }
+  </script>
+</head>
+<body>
+  <p id="message">Original Message</p>
+  <button onclick="changeText()">Change Message</button>
+  <br><br>
+  <input type="text" id="userInput" placeholder="Enter text">
+  <button id="updateBtn" onclick="updateText()">Update Paragraph</button>
+  <button onclick="clearAll()">Clear</button>
+  <p id="output"></p>
+</body>
+</html>
