@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Basics</title>
+  <script>
+    // Alert greeting
+    alert("Hello from Cipher Schools!");
+
+    // Arrow function for sum
+    const add = (a, b) => a + b;
+
+    // Test function
+    console.log(add(5, 3)); // 8
+    console.log(add(10, 20)); // 30
+
+    // Log type of variable
+    let num = 42;
+    console.log(typeof num); // number
+
+    // Log window object
+    console.log(window);
+  </script>
+</head>
+<body>
+  <h1>Open Console to See Results</h1>
+</body>
+</html>
